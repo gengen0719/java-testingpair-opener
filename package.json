@@ -2,9 +2,10 @@
   "name": "java-testingpair-opener",
   "displayName": "JavaTestingPairOpener",
   "description": "This is an extension that opens JavaCode's TestingPair with a shortcut-key.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "gengen0719",
   "icon":"icon.png",
+  "repository": {"url": "https://github.com/gengen0719/java-testingpair-opener","type": "github"},
   "engines": {
     "vscode": "^1.90.0"
   },
