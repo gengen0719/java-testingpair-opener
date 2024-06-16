@@ -1,0 +1,42 @@
+{
+  "name": "java-testingpair-opener",
+  "displayName": "JavaTestingPairOpener",
+  "description": "This is an extension that opens JavaCode's TestingPair with a shortcut-key.",
+  "version": "1.0.0",
+  "publisher": "gengen0719",
+  "icon":"icon.png",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Keymaps"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [{
+      "command": "java-testingpair-opener.openTestingPair",
+      "title": "Open Testing Pair"
+    }],
+    "keybindings": [{
+      "command": "java-testingpair-opener.openTestingPair",
+      "key": "ctrl+9",
+      "mac": "cmd+9",
+      "when": "editorTextFocus"
+    }]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.90.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "20.x",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.4.0"
+  }
+}
