@@ -24,7 +24,36 @@
       "key": "ctrl+9",
       "mac": "cmd+9",
       "when": "editorTextFocus"
-    }]
+    }],
+    "configuration": {
+      "title": "Java TestingPair Opener",
+      "properties": {
+        "java-testingpair-opener.testingPairs": {
+          "type": "array",
+          "default": [
+            {
+              "name": "Production",
+              "pattern": "src/main/java",
+              "suffix": "",
+              "position": 0
+            },
+            {
+              "name": "Unit Test",
+              "pattern": "src/test/java",
+              "suffix": "Test",
+              "position": 1
+            },
+            {
+              "name": "Integration Test",
+              "pattern": "src/int-test/java",
+              "suffix": "IntTest",
+              "position": 2
+            }
+          ],
+          "description": "Configure testing pairs. Each pair should have a name, pattern (directory), suffix, and position."
+        }
+      }
+    }
   },
   "scripts": {
     "lint": "eslint .",
